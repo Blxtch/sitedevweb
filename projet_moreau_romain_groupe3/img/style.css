@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding : 20px;
+    
+}
+
+#histoireMenu {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#histoireMenu div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#histoireMenu .text {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 300px;
+}
+
+#manwhaMenu {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#manwhaMenu div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#manwhaMenu .text {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 300px;
+}
+
+
+.Computer {
+    height: 200px;
+    margin-bottom: 10px;
+    margin:20px;
+}
+
+.Phone {
+    height: 400px;
+    margin-bottom: 10px;
+}

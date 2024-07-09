@@ -1,0 +1,679 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+body {
+    margin:0;
+    font-family:"Arvo", "Calibri",sans-serif ;
+    width: 100%;
+}
+
+
+/*Header Menu de Nav et Image + Titre*/
+
+header nav div h1{
+    margin-top: 0;
+    padding-top: 25px;
+    padding-left: 15px;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: Arvo-Bold;
+}
+
+header nav a{
+    text-decoration:none;
+    color:black;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+header nav ul a:hover{
+    color:gray;
+}
+
+header nav ul{
+	list-style:none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+header nav ul ul {
+    display: none;
+    border:#000 2px solid;
+}
+
+header nav ul li:hover ul{
+    display:none;
+}
+
+header nav ul li{
+    list-style-type: none; 
+}
+
+header nav ul ul a:hover, header nav ul ul a:active{
+    color:gray;
+}
+
+#imageaccueil {
+    background-image: url("img/backgroundaccueil.jpg");
+    height: 300px;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    margin-top: 0;   
+}
+
+
+/*Main, articles et autres*/
+
+main {
+    /*Le footer remonte :( */
+    padding-bottom: 25px;
+}
+
+main section h2 {
+    display: none;
+}
+
+
+main section article{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin-left:10% ;
+}
+
+#apprendre{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+
+    margin-left:10% ;
+    margin-bottom:15px ;
+}
+
+#tournois {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-right: 10%;   
+}
+
+#tournois h3 {
+    border-bottom:2px solid #000;
+}
+
+#imgarticle1 img {
+    width:250px;
+    height: 250px;
+
+    margin-bottom: 50px; 
+}
+
+#imgarticle1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgarticle2 img {
+    width:300px;
+    margin-bottom: 25px;
+    height: 190px;
+}
+
+#imgarticle2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main section h3{
+    border-bottom:2px solid #000;
+    font-size: 1.6rem;
+}
+
+main section h4 {
+    font-size: 1.4rem;
+}
+
+main section article p{
+	font-size:1.2rem;
+	margin-top:5px;
+	line-height:1.8rem;
+}
+
+
+/*partie Page Tournois*/
+
+#tournoisaccueil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #231f20; 
+}
+
+.textnews {
+    width: 80%;
+}
+
+.titrepagetournois {
+    color: aliceblue;
+    padding-left:  25px;
+}
+
+.titrepagetournois h1{
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: fit-content;
+}
+
+.titrepagetournois p{ 
+    font-size: 0.9rem;
+    width: fit-content;
+}
+
+#pageTheorie {
+    display:flex;
+    flex-direction: column;
+}
+
+#news2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    line-height:1.8rem;
+    width: 80%;
+    margin-left: 10%;   
+}
+
+
+/*partie page Theorie */
+
+#hautdepagetheorie {
+    height: 400px;
+    width: 100%;
+
+    background-image: url('img/knighttheorie.jpg') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.rowouverture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.col {
+    display: flex;
+    flex-direction:column;
+    
+    padding: 50px;
+    width: 250px;
+    height: 550px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+    border-radius:35px ;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: #231f20;
+    color: aliceblue;
+   
+    padding:25px;
+    
+    box-shadow: 0 0 10px rgba(35,31,32,0.5);
+    transition: box-shadow 0.3s ease-in;
+    
+}
+
+.col:hover{
+    box-shadow: 0 0 39px rgba(35,31,32,1);
+    
+}
+
+.col-title{
+border-bottom: 2px solid aliceblue;
+}
+
+.col-p {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: justify; 
+}
+
+.col-p p {
+    margin-top: 0;
+}
+
+.rowouverture h2 {
+    padding-bottom: 15px;
+}
+
+.col img {
+    height: 180px;
+    width: 180px;
+
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.colouverture {
+    display: flex;
+    flex-direction: column;
+}
+
+.texttheorie {
+    display: flex;
+    flex-direction: column;
+    font-size:1.2rem;
+	margin-top:5px;
+	line-height:1.8rem;
+
+    width: 80%;
+    padding-left:10% ;
+}
+
+footer{
+    background-color: #000;
+    
+    text-align: center;
+    font-style: italic;
+
+    font-size: 0.7rem;
+    padding: 8px;
+    color: aliceblue;
+    bottom: 0;
+
+    height: 25px;
+    
+    }
+
+
+/*partie wireframe*/
+
+    .wireframe{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+        margin-bottom: 50px;
+        line-height: 1.6rem;
+    }
+
+    #suiteimgwireframe {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+
+    #suiteimgwireframe img {
+        width: 200px;
+        height: 300px;
+    }
+
+    #suiteimgwireframe p {
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    /*version grands ecrans*/
+
+    @media screen and (min-width: 620px){
+
+        header nav a{
+            text-decoration:none;
+            color:black;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        /*partie Page Index*/
+
+        header nav ul ul {
+            position:absolute;
+            top:49px;
+            left:0;
+            background-color: #fff;
+            border:black 2px solid;
+            padding:0;
+            text-align:center;
+        }
+
+        #imageaccueil{
+            height: 400px;
+        }
+
+        header nav div h1{
+             margin-top: 0;
+             padding-top: 25px;
+             padding-left: 15px;
+             color: aliceblue;
+
+             font-size: 3rem;
+             font-family: Arvo-Bold;
+
+        }
+
+         main section div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+
+        
+        /*partie Page Tournois*/
+
+        #tournois {
+            margin-right: 10%;
+        }
+
+        #imgarticle1 img {
+            height: 300px;
+            width: 300px;
+
+            margin-right: 50px;
+            margin-bottom: 50px;      
+            margin-top: 40px;
+        }
+
+        #imgarticle2 img {
+          
+            width: 500px;
+            height: 300px;
+
+            margin-left: 10%;
+            margin-bottom: 50px;
+            margin-top: 40px;
+        }
+        
+    
+        #news2 {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            justify-content: left;
+            
+            width: 80%; 
+        }
+
+        #news1 {
+            display: flex;
+            flex-direction:column;
+            font-size: 1.2rem;
+            
+            width: 80%;     
+        }
+
+        .textnewsalt{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 80%;
+        }
+
+
+        /*partie Page Theorie*/
+
+        #hautdepagetheorie {
+            height: 600px;
+            width: 100%;
+
+            background-image: url('img/KnightTheorie.jpg') ;
+            background-size: contain;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .col img {
+            height: 180px;
+            width: 180px;
+
+            margin-top: 30px;
+            margin-left: 0;
+        }
+        
+    }
+
+
+
+    @media screen and (min-width: 933px){
+
+        #imageaccueil {
+             background-image: url("img/backgroundaccueil.jpg");
+             background-size: cover;
+             background-position: center center;
+             background-repeat: no-repeat;
+
+             height: 450px;
+             width: 100%;
+             
+             margin-top: 0;  
+         }
+
+         .imgarticle img {
+            width:100px;
+            height: 100px;
+
+            margin-right: 10%;
+            margin-bottom: 50px;     
+            margin-top: 40px;
+        }
+
+
+        /*partie Page Theorie*/
+
+        .col {
+            display: flex;
+            flex-direction:column;
+            
+            padding: 50px;
+            width: 400px;
+            height: 600px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        
+            border-radius:35px ;
+            border: 2px solid #000;
+            cursor: pointer;
+        
+            background-color: #231f20;
+            color: aliceblue;
+             
+            box-shadow: 0 0 10px #231f20;
+            transition: box-shadow 0.3s ease-in;
+            
+        }
+
+        .col-p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            text-align: justify;     
+        }
+
+        .col img {
+            height: 300px;
+            width: 300px;
+
+            margin-top: 30px;
+            margin-left: 0;    
+        }
+
+        #news2 {
+            display: flex;
+            flex-direction: column;
+
+            margin-left: 6%;
+
+            width: 600px;
+            height: 100%;
+            
+        }
+
+        #news1 {
+            margin-left: 6%;
+        }
+
+        .textnews{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        #imgarticle1 img {
+            margin-left: 80px;
+        }
+
+        #imgarticle2 img{
+            display: none;
+        }
+
+        #imgarticle2 {
+            height: 750px;
+            width: 350px;
+
+            background-image: url("img/carlsen3.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            margin-right: 50px;
+        }
+
+        .textnews {
+            margin-left: 5%;
+        }
+
+        .textnewsalt {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            margin-left: 0;
+            
+        }
+
+        .wireframe{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between ;
+            margin-bottom: 50px;
+            line-height: 1.6rem;
+        }
+
+    }
+
+    @media screen and (min-width: 1250px){
+        #imgarticle1 img  {
+            width: 350px;
+            height: 350px;
+            
+            margin-left: 50px ;
+        }
+        
+        #titretournoisarticle {
+            
+            width: 600px;
+        }
+
+        #news2{
+            font-size: 1.2rem;
+            width: 600px;
+            height: 100%;
+            
+        }
+
+        #textnewsalt{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+           
+            width: 100%;
+
+        }
+
+        /*un peu plus sympa pour la lecture wireframes  */
+
+        
+        #suiteimgwireframe{
+            margin-left: 100px;
+        }
+
+        #suiteimgwireframe img {
+            width: 300px;
+            height: 400px;
+        }
+        
+        #suiteimgwireframe p {
+            margin-left: 20px;
+            
+            font-size: 1.2rem;
+        }
+
+    }
+
+    @media screen and (min-width: 1600px){
+
+        /*partie Page Theorie*/
+        .rowouverture {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;   
+        }
+
+        .col {
+            display: flex;
+            flex-direction:column;
+            
+            padding: 50px;
+            width: 350px;
+            height: 600px;
+
+            margin-bottom: 50px;
+            margin-top: 50px;
+        
+            border-radius:35px ;
+            border: 2px solid #000;
+            cursor: pointer;
+        
+            background-color: #231f20;
+            color: aliceblue;
+        
+            box-shadow: 0 0 10px #231f20;
+            transition: box-shadow 0.3s ease-in;
+            
+        }
+
+        .col-p {
+            margin-top: 10px;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .col img {
+            height: 250px;
+            width: 250px;
+
+            margin-top: 30px;
+            margin-left: 0;
+        }
+            
+    }
+
+
+
+
+
